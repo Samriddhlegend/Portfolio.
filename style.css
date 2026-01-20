@@ -475,5 +475,7 @@ footer {
     white-space: nowrap;
     font-size: 2rem;
     text-align: center;
+    margin: 0 auto;
+    width: fit-content;
   }
 }
