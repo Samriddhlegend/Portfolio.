@@ -469,3 +469,10 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  h1 {
+    white-space: nowrap;
+    font-size: 2rem;
+  }
+}
