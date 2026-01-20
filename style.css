@@ -490,3 +490,10 @@ footer {
     font-size: 26px;
   }
 }
+
+h1 {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-size: clamp(24px, 6vw, 52px) !important;
+}
