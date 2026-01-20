@@ -53,7 +53,6 @@ section {
     padding: 4rem 0;
 }
 
-/* Header */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -121,7 +120,7 @@ section {
     background-color: var(--text-color);
 }
 
-/* Home Section */
+
 #home {
     display: flex;
     justify-content: center;
@@ -129,7 +128,7 @@ section {
     height: 100vh;
     text-align: center;
     background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
-    background-attachment: fixed; /* Parallax effect */
+    background-attachment: fixed; 
     position: relative;
 }
 
@@ -143,7 +142,7 @@ section {
     animation: fadeInUp 1s;
 }
 
-/* Typing Text & Social Icons */
+
 .typing-text {
     color: var(--primary-color);
     position: relative;
@@ -209,7 +208,7 @@ section {
 
 
 
-/* Skills Section */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -233,7 +232,7 @@ section {
     border: 1px solid var(--primary-color);
 }
 
-/* Projects Section */
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -271,7 +270,7 @@ section {
     text-decoration: none;
 }
 
-/* Contact Section */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -305,7 +304,7 @@ section {
 }
 
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 2rem 0;
@@ -313,7 +312,7 @@ footer {
     backdrop-filter: blur(10px);
 }
 
-/* Animations */
+
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -329,7 +328,7 @@ footer {
     50% { opacity: 0; }
 }
 
-/* Scroll Reveal Classes */
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -348,7 +347,7 @@ footer {
     100% { background-position: 200% 50%; }
 }
 
-/* Responsive */
+
 @media(max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -391,7 +390,6 @@ footer {
     }
 }
 
-/* Scroll-to-top Button */
 .scroll-top-btn {
     position: fixed;
     bottom: 2rem;
@@ -421,7 +419,7 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 0 15px var(--primary-color);
 }
-/* Profile Picture in Home Section */
+
 .profile-pic {
     width: 160px;
     height: 160px;
@@ -464,3 +462,4 @@ footer {
         box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
     }
 }
+
