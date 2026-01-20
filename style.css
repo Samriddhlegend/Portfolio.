@@ -470,14 +470,8 @@ footer {
   }
 }
 
-
 @media (max-width: 480px) {
   h1 {
-    font-size: 2rem;
-    white-space: nowrap;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: clip;
-    margin: 0 auto;
+    font-size: 1.8rem;
   }
 }
