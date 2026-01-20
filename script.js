@@ -1,4 +1,4 @@
-// Inject FontAwesome for Icons
+
 const faLink = document.createElement('link');
 faLink.rel = 'stylesheet';
 faLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
@@ -17,7 +17,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 }))
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -26,7 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.querySelector(targetId);
         
         if(targetElement){
-            const headerOffset = 60; // a height of your fixed header
+            const headerOffset = 60; 
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -38,24 +37,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// --- DYNAMIC CONTENT INJECTION & ANIMATION ---
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const homeContent = document.querySelector('.home-content');
     
     if (homeContent) {
-        // 1. Inject Typing Text Element
+        
         const h1 = homeContent.querySelector('h1');
         if (h1) {
             const subtitle = document.createElement('h3');
             subtitle.innerHTML = "I'm a <span class='typing-text'></span>";
             subtitle.style.fontSize = "2rem";
             subtitle.style.marginTop = "10px";
-            subtitle.style.minHeight = "40px"; // Prevent layout shift
+            subtitle.style.minHeight = "40px"; 
             h1.after(subtitle);
         }
 
-        // 2. Inject Social Icons
+        
         const socialDiv = document.createElement('div');
         socialDiv.className = 'social-icons';
         socialDiv.innerHTML = `
@@ -65,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         homeContent.appendChild(socialDiv);
 
-        // 3. Start Typing Animation
+        
         const txts = ["CSE Student","Web Developer", "AI Explorer", "Tech Learner", "Coder"];
         let txtIndex = 0;
         let charIndex = 0;
@@ -100,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Scroll Reveal Animation
 const observerOptions = {
     threshold: 0.15
 };
@@ -118,7 +116,6 @@ document.querySelectorAll('section, .skill-card, .project-card, .about-content')
     observer.observe(el);
 });
 
-// Active Link Highlighting (Scroll Spy)
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -139,13 +136,14 @@ window.addEventListener("scroll", () => {
     });
 });
 
-// Scroll to top button
+
 const scrollTopBtn = document.querySelector("#scrollTopBtn");
 
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 300) { // Show button after scrolling 300px
+    if (window.pageYOffset > 300) { 
         scrollTopBtn.classList.add("show");
     } else {
         scrollTopBtn.classList.remove("show");
     }
+
 });
